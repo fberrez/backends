@@ -1,0 +1,26 @@
+{
+  "name": "backends",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A basic package used to handle backend instances.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fberrez",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fberrez/backends.git"
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.3"
+  },
+  "dependencies": {
+    "convict": "^6.1.0",
+    "dotenv": "^10.0.0",
+    "postgres": "^1.0.2"
+  }
+}
