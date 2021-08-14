@@ -1,11 +1,10 @@
 module.exports = {
   env: {
+    commonjs: true,
     es2021: true,
     node: true,
-    mocha: true,
   },
-  plugins: ['mocha'],
-  extends: ['airbnb-base', 'plugin:mocha/recommended'],
+  extends: ['airbnb-base'],
   parserOptions: {
     ecmaVersion: 12,
   },

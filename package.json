@@ -5,11 +5,11 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "echo \"No test specified.\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "npx eslint --cache --config .eslintrc.js ."
   },
   "author": "fberrez",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/fberrez/backends.git"
@@ -17,9 +17,7 @@
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.24.0",
-    "eslint-plugin-mocha": "^9.0.0",
-    "mocha": "^9.0.3"
+    "eslint-plugin-import": "^2.24.0"
   },
   "dependencies": {
     "convict": "^6.1.0",
