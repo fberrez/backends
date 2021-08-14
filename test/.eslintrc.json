@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "prefer-arrow-callback": "off",
+    "mocha/prefer-arrow-callback": "off",
+    "func-names": "off",
+    "no-undef": "off"
+  }
+}

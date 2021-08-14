@@ -1,3 +1,7 @@
-import postgres from `./lib/backend/postgres`;
+const Postgres = require('./lib/postgres/postgres');
+const Mongo = require('./lib/mongo/mongo');
 
-export const postgres = postgres;
+module.exports = {
+  Mongo,
+  Postgres,
+};
