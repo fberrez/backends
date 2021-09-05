@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/.bin/jest --detectOpenHandles",
-    "lint": "npx eslint --cache --config .eslintrc.js ."
+    "lint": "npx eslint --cache --config .eslintrc.cjs ."
   },
   "author": "fberrez",
   "license": "MIT",
