@@ -1,7 +1,3 @@
-const Postgres = require('./lib/postgres/postgres');
-const Mongo = require('./lib/mongo/mongo');
+import {Mongo} from './lib/mongo/mongo.js';
 
-module.exports = {
-  Mongo,
-  Postgres,
-};
+export {Mongo};
