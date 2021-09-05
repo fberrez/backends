@@ -6,7 +6,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/.bin/jest --detectOpenHandles ",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --detectOpenHandles --testTimeout=10000",
     "lint": "npx eslint --cache --config .eslintrc.js ."
   },
   "author": "fberrez",
