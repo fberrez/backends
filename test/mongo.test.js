@@ -23,16 +23,15 @@ test('test connection with uri', async () => {
 
 test('test connection with manual entries', async () => {
 	const mongo = new Mongo();
-	await mongo.buildURI({
+	mongo.buildURI({
 		protocol: 'mongodb://',
-		host: mongod.instanceInfo.ip,
-		database: mongod.instanceInfo.dbName,
-	}).connect();
+		host: 'localhost:27017',
+		username: 'myuser',
+		password: 'mysecret',
+		database: 'mydb',
+	});
 
-	expect(mongo.getURI()).toBeDefined();
-	expect(mongo.getConn().readyState).toBe(1);
-	await mongo.getConn().close();
-	expect(mongo.getConn().readyState).toBe(0);
+	expect(mongo.getURI()).toMatch('mongodb://myuser:mysecret@localhost:27017/mydb');
 });
 
 test('test unitialized connection', async () => {
